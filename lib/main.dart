@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:gym_check/screens/home.dart';
+import 'package:gym_check/screens/login.dart';
 
 void main() {
   runApp(const MyApp());
@@ -13,9 +13,11 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Gym Check',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        brightness: Brightness.dark,
+        primarySwatch: Colors.red,
+        primaryColor: Colors.blueGrey
       ),
-      home: Home(),
+      home: Login(),
     );
   }
 }
